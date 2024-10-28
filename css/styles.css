@@ -558,7 +558,7 @@ section .container {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-icon:focus {
+.input-box:focus-within .input-icon {
   fill: #4d5ae5;
 }
 .comment-box {
@@ -597,6 +597,9 @@ section .container {
   gap: 8px;
 }
 .tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -604,9 +607,6 @@ section .container {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   fill: transparent;
 }
 input[type="checkbox"]:checked + .checkbox-lbl .tick {
@@ -616,7 +616,6 @@ input[type="checkbox"]:checked + .checkbox-lbl .tick {
 }
 .privacy-link {
   color: #4d5ae5;
-  text-decoration: underline;
 }
 .modal-btn {
   display: block;
