@@ -589,9 +589,6 @@ section .container {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 .tick {
   display: inline-flex;
@@ -605,6 +602,7 @@ section .container {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
+  margin-right: 8px;
 }
 input[type="checkbox"]:checked + .checkbox-lbl .tick {
   background-color: #404bbf;
@@ -613,9 +611,6 @@ input[type="checkbox"]:checked + .checkbox-lbl .tick {
 }
 .privacy-link {
   color: #4d5ae5;
-}
-#privacy-terms {
-  text-decoration: underline;
 }
 .modal-btn {
   display: block;
