@@ -548,18 +548,21 @@
           </div>
           <div class="terms">
             <input
+              class="visually-hidden"
               type="checkbox"
-              name="terms"
+              name="user-privacy"
               value="true"
               id="user-privacy"
             />
             <label for="user-privacy" class="checkbox-lbl">
-              <svg class="click-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-click"></use>
-              </svg>
+              <span class="tick"
+                ><svg class="click-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-tick-icon"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
-              <a href="" class="pivacy-link">Privacy Policy</a></label
-            >
+              <a href="" target="_blank" class="pivacy-link">Privacy Policy</a>
+            </label>
           </div>
           <button class="modal-btn" type="submit">Send</button>
         </form>
