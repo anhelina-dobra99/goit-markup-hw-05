@@ -614,6 +614,9 @@ input[type="checkbox"]:checked + .checkbox-lbl .tick {
 .privacy-link {
   color: #4d5ae5;
 }
+#privacy-terms {
+  text-decoration: underline;
+}
 .modal-btn {
   display: block;
   font-family: "Roboto", sans-serif;
